@@ -1,4 +1,4 @@
-# travelWeb
+# Travelweb
 
 This is just for practicing making a webpage.
 
