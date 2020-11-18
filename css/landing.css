@@ -1,0 +1,194 @@
+/* body */
+.uppercase-text{
+    text-transform: uppercase;
+}
+
+.lowercase-text{
+    text-transform: lowercase;
+}
+
+.capitalize-text{
+    text-transform: capitalize;
+}
+
+.small-margin{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+body{
+    font-family: 'Encode Sans', sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-image: url("../media/images/wallOfChina2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: white;
+}
+/* body */
+
+/* navbar */
+.navbar{
+	position: fixed;
+	height: 60px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+    background: transparent;
+}
+
+.nav-container{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar ul li{
+	list-style: none;
+    margin: 0;
+    padding-top: 0;
+	display: inline-block;
+    line-height: 60px;
+}
+
+.navbar ul{
+    padding-inline-start: 0;
+    margin-block-start: 5px;
+    margin-block-end: 0;
+}
+
+.navbar ul li a{
+	margin: 10px 15px;
+	color: white;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.navbar p{
+    font-size: 30px;
+    margin-block-start: 1rem;
+    margin-block-end: 0;
+}
+/* navbar */
+
+/* center container */
+.window-container{
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 200px;
+}
+
+.grid{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1.6fr .8fr .8fr .8fr;
+    grid-template-areas: 
+    "description image-1 image-2 image-3";
+}
+
+#line{
+    height: 5px;
+    width: 50px;
+    background: red;
+}
+
+#description h2{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 5px;
+}
+
+#description h1{
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#image-1,#image-2,#image-3{
+    height: 300px;
+    width: 80%;
+    margin-top: 50px;
+    background: white;
+    border-radius: 30px;
+    text-align: left;
+    box-shadow: 0 0 8px 1px rgb(32, 32, 32);
+    transition: .5s;
+    overflow: hidden;
+}
+
+#image-1:hover,#image-2:hover,#image-3:hover{
+    margin-top: 30px;
+    transition: .5s;
+}
+
+#image-1{
+    background-image: url("../media/images/bali2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-2{
+    background-image: url("../media/images/saudi.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#image-3{
+    background-image: url("../media/images/japan.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.small-info{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding-top: 200px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+#image-1 a,#image-2 a,#image-3 a{
+    text-decoration: none;
+}
+/* center container */
+
+/* grid area */
+#description{
+    grid-area: description;
+}
+
+#image-1{
+    grid-area: image-1;
+}
+
+#image-2{
+    grid-area: image-2;
+}
+
+#image-3{
+    grid-area: image-3;
+}
+/* grid area */
+
+@media screen and (max-width:1150px){
+
+}
+
+@media screen and (max-width:720px){
+
+}
