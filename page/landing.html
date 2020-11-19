@@ -19,6 +19,7 @@
             https://unsplash.com/photos/Q36BvLGdOAg created by Hanson Lu
             https://unsplash.com/photos/umnb5vA8HuQ created by Sergio Camalich
             https://unsplash.com/photos/-tg9d-JLXV8 created by Ying Gong
+            https://unsplash.com/photos/QUwLZNchflk created by Jeremy Bishop
         -->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,16 +28,31 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap" rel="stylesheet"> 
     </head>
 
-    <body>
+    <body id="body">
         <div class="container">
             <!-- start navbar -->
             <nav class="navbar">
                 <div class="nav-container">
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                     <p class="capitalize-text">travelweb</p>
                     <ul class="nav-links">
                         <li><a href="#" class="capitalize-text">home</a></li>
-                        <li><a href="#" class="capitalize-text">hotel</a></li>
-                        <li><a href="#" class="capitalize-text">flight</a></li>
+                        <li><a href="#" class="capitalize-text">hotel<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="capitalize-text">find hotel</a></li>
+                                <li><a href="#" class="capitalize-text">book a room</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="capitalize-text">flight<i class="fa fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="#" class="capitalize-text">find flight</a></li>
+                                <li><a href="#" class="capitalize-text">book a ticket</a></li>
+                            </ul>
+                        </li>
                         <li><a href="#" class="capitalize-text">about us</a></li>
                         <li><a href="#" class="capitalize-text">blog</a></li>
                         <li><a href="#" class="capitalize-text">contact us</a></li>
@@ -54,13 +70,13 @@
                 <div class="grid">
                     <div id="description">
                         <div id="line"></div>
-                        <h2 class="uppercase-text">wall of china</h2>
+                        <h2 class="uppercase-text" id="name">wall of china</h2>
                         <h1 class="uppercase-text">explore</h1>
-                        <h1 class="uppercase-text">china now</h1>
-                        <p>The Great Wall of China is an ancient wall in China. The wall is made of cement, rocks, bricks, and powdered dirt. It was finished in 1878 and it was meant to protect the north of the empire of Chine from enemy attacks. It is the longest structure humans have ever built.</p>
+                        <h1 class="uppercase-text" id="country">china now</h1>
+                        <p id="explanation">The Great Wall of China is an ancient wall in China. The wall is made of cement, rocks, bricks, and powdered dirt. It was finished in 1878 and it was meant to protect the north of the empire of Chine from enemy attacks. It is the longest structure humans have ever built.</p>
                     </div>
                     <div id="image-1">
-                        <a href="#" id="bali-select">
+                        <a href="#" id="bali-select" onclick="slideShow(1)">
                             <div class="small-info">
                                 <p class="uppercase-text selection-text small-margin top-border">bali</p>
                                 <p class="uppercase-text selection-text small-margin">indonesia</p>
@@ -68,7 +84,7 @@
                         </a>
                     </div>
                     <div id="image-2">
-                        <a href="#" id="saudi-select">
+                        <a href="#" id="saudi-select" onclick="slideShow(2)">
                             <div class="small-info">
                                 <p class="uppercase-text selection-text small-margin top-border">mecca</p>
                                 <p class="uppercase-text selection-text small-margin">saudi arabia</p>
@@ -76,9 +92,9 @@
                         </a>
                     </div>
                     <div id="image-3">
-                        <a href="#" id="japan-select">
+                        <a href="#" id="japan-select" onclick="slideShow(3)">
                             <div class="small-info">
-                                <p class="uppercase-text selection-text small-margin top-border">tokyo</p>
+                                <p class="uppercase-text selection-text small-margin top-border">honsu</p>
                                 <p class="uppercase-text selection-text small-margin">japan</p>
                             </div>
                         </a>
@@ -87,5 +103,7 @@
             </div>
             <!-- end content -->
         </div>
+
+        <script src="../js/landing.js"></script>
     </body>
 </html>
